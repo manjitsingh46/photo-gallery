@@ -1,0 +1,141 @@
+.app {
+  width: min(980px, 96vw);
+  margin: 24px auto;
+  color: #222;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.hero {
+  text-align: left;
+  margin-bottom: 16px;
+}
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+.hero h1 {
+  margin: 4px 0;
+  font-size: 2rem;
+  color: #111827;
+}
+.lead {
+  margin: 0;
+  color: #374151;
+}
+
+.controls {
+  margin: 16px 0 24px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 8px;
+}
+.form input,
+.search {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form button {
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form button:hover {
+  background: #1d4ed8;
+}
+.error {
+  margin-top: 8px;
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+.search {
+  margin-top: 10px;
+  display: block;
+}
+
+.gallery-section {
+  margin-top: 12px;
+}
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.gallery-header h2 {
+  margin: 0;
+}
+.small {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+.empty {
+  margin: 16px 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+.card-body {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.card-body h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #111827;
+  flex: 1;
+}
+.card-body button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 9px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.card-body button:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 720px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
+
